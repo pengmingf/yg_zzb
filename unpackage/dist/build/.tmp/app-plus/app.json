@@ -1,14 +1,16 @@
 {
   "pages": [
-    "pages/food/food_menu/index",
     "pages/login/login",
+    "pages/food/food_menu/index",
+    "pages/food/food_menu/detail",
     "pages/main/main",
     "pages/reg/reg",
     "pages/pwd/pwd",
     "pages/user/user",
     "pages/user/user_show",
     "pages/msg/msg",
-    "pages/userManage/userManage"
+    "pages/userManage/userManage",
+    "components/u-charts-body/u-charts-body"
   ],
   "window": {
     "navigationBarTextStyle": "white",

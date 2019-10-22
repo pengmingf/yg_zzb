@@ -1,0 +1,1 @@
+<view class="page"><view class="content"><view class="banner-image"><image class="images" src="{{image}}"></image></view><view class="food-prepare"><view class="food-ready">准备食材:</view><view class="food-detail">{{food.food_pre}}</view></view><view class="zuofa"><view class="zuofa-i">做法:</view><view class="food-detail">{{food.content}}</view></view></view></view>

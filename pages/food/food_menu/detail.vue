@@ -6,11 +6,11 @@
 			</view>
 			<view class="food-prepare">
 				<view class="food-ready">准备食材:</view>
-				<view class="food-detail">鸡蛋，番茄，鱿鱼，大闸蟹，猪肉，羊肉，大葱，黑胡椒，麻油，橄榄球，汽油，牛肉，羊肉</view>
+				<view class="food-detail">{{food.food_pre}}</view>
 			</view>
 			<view class="zuofa">
 				<view class="zuofa-i">做法:</view>
-				<view class="food-detail">鸡蛋，番茄，鱿鱼，大闸蟹，猪肉，羊肉，大葱，黑胡椒，麻油，橄榄球，汽油，牛肉，羊肉</view>
+				<view class="food-detail">{{food.content}}</view>
 			</view>
 		</view>
 	</view>
