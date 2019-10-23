@@ -10,7 +10,8 @@
     "pages/user/user_show",
     "pages/msg/msg",
     "pages/userManage/userManage",
-    "components/u-charts-body/u-charts-body"
+    "components/u-charts-body/u-charts-body",
+    "pages/test/test"
   ],
   "window": {
     "navigationBarTextStyle": "white",

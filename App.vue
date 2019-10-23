@@ -1,7 +1,28 @@
 <script>
 	export default {
 		onLaunch: function() {
+			// uni.getProvider({
+			//     service: 'push',
+			//     success: function (res) {
+			//         console.log(res) 
+			// 		uni.subscribePush({
+			// 			provider: res.provider,
+			// 			success: function (res) {
+			// 				console.log('success:' + JSON.stringify(res));
+			// 			}
+			// 		});
+			//     }
+			// });
+			// plus.push.addEventListener("receive",function(msg){
+			// 	console.log(msg)
+			// })
+			// plus.push.addEventListener("click",function(){
+			// 	uni.showModal({
+			// 		content:"从消息中心进来的吧"
+			// 	}) 
+			// })
 			console.log('App Launch');
+			
 		},
 		onShow: function() {
 			console.log('App Show');

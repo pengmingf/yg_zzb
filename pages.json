@@ -69,6 +69,10 @@
             "path" : "components/u-charts-body/u-charts-body",
             "style" : {}
         }
+        ,{
+            "path" : "pages/test/test",
+            "style" : {}
+        }
     ],
     "tabBar": {
         "color": "#7a7e83",

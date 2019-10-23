@@ -53,7 +53,7 @@ export default
 	.content{
 		width: 660upx;
 		margin: 20upx auto;
-		height: 100%;
+		/* height: 100%; */
 	}
 	.banner-image{
 		width: 660upx;

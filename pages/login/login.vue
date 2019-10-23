@@ -119,6 +119,8 @@
 						if(res.data.code == 1)
 						{
 							uni.setStorageSync('tuser_id',res.data.id);
+							var info = plus.push.getClientInfo();
+							console.log(info);
 							this.toMain(res.data.username);
 						}else{
 							uni.showToast({
