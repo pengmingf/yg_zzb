@@ -1,5 +1,5 @@
 {
-    "name" : "健身管理",
+    "name" : "Edison.F",
     "appid" : "__UNI__998F93B",
     "description" : "俱乐部健身管理",
     "versionName" : "1.0.0",
@@ -90,6 +90,13 @@
                         "spotlight@2x" : "unpackage/res/icons/80x80.png",
                         "spotlight@3x" : "unpackage/res/icons/120x120.png"
                     }
+                }
+            },
+            "splashscreen" : {
+                "android" : {
+                    "hdpi" : "C:/Users/Administrator/Desktop/480.png",
+                    "xhdpi" : "C:/Users/Administrator/Desktop/720.png",
+                    "xxhdpi" : "C:/Users/Administrator/Desktop/1080.png"
                 }
             }
         },

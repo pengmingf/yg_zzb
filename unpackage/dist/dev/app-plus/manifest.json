@@ -5,13 +5,13 @@
     "iPad"
   ],
   "id": "__UNI__998F93B",
-  "name": "健身管理",
+  "name": "Edison.F",
   "version": {
     "name": "1.0.0",
     "code": "100"
   },
   "description": "俱乐部健身管理",
-  "launch_path": "__uniapptabbar.html",
+  "launch_path": "__uniappview.html",
   "developer": {
     "name": "",
     "email": "",
@@ -26,7 +26,7 @@
   },
   "plus": {
     "useragent": {
-      "value": "uni-app appservice",
+      "value": "uni-app",
       "concatenate": true
     },
     "splashscreen": {
@@ -36,7 +36,11 @@
       "delay": 0
     },
     "popGesture": "close",
-    "launchwebview": {},
+    "launchwebview": {
+      "id": "1",
+      "kernel": "WKWebview",
+      "uni-app": "auto"
+    },
     "statusbar": {
       "immersed": "supportedDevice",
       "style": "light",
@@ -45,6 +49,45 @@
     "usingComponents": true,
     "nvueCompiler": "uni-app",
     "distribute": {
+      "icons": {
+        "android": {
+          "hdpi": "unpackage/res/icons/72x72.png",
+          "xxxhdpi": "unpackage/res/icons/192x192.png",
+          "xhdpi": "unpackage/res/icons/96x96.png",
+          "xxhdpi": "unpackage/res/icons/144x144.png"
+        },
+        "ios": {
+          "appstore": "unpackage/res/icons/1024x1024.png",
+          "ipad": {
+            "app": "unpackage/res/icons/76x76.png",
+            "app@2x": "unpackage/res/icons/152x152.png",
+            "notification": "unpackage/res/icons/20x20.png",
+            "notification@2x": "unpackage/res/icons/40x40.png",
+            "proapp@2x": "unpackage/res/icons/167x167.png",
+            "settings": "unpackage/res/icons/29x29.png",
+            "settings@2x": "unpackage/res/icons/58x58.png",
+            "spotlight": "unpackage/res/icons/40x40.png",
+            "spotlight@2x": "unpackage/res/icons/80x80.png"
+          },
+          "iphone": {
+            "app@2x": "unpackage/res/icons/120x120.png",
+            "app@3x": "unpackage/res/icons/180x180.png",
+            "notification@2x": "unpackage/res/icons/40x40.png",
+            "notification@3x": "unpackage/res/icons/60x60.png",
+            "settings@2x": "unpackage/res/icons/58x58.png",
+            "settings@3x": "unpackage/res/icons/87x87.png",
+            "spotlight@2x": "unpackage/res/icons/80x80.png",
+            "spotlight@3x": "unpackage/res/icons/120x120.png"
+          }
+        }
+      },
+      "splashscreen": {
+        "android": {
+          "hdpi": "C:/Users/Administrator/Desktop/480.png",
+          "xhdpi": "C:/Users/Administrator/Desktop/720.png",
+          "xxhdpi": "C:/Users/Administrator/Desktop/1080.png"
+        }
+      },
       "google": {
         "permissions": [
           "<uses-feature android:name=\"android.hardware.camera\"/>",
@@ -110,7 +153,7 @@
       }
     },
     "uni-app": {
-      "compilerVersion": "2.3.3",
+      "compilerVersion": "2.3.7",
       "control": "v8",
       "nvueCompiler": "uni-app",
       "renderer": "auto",
@@ -118,10 +161,32 @@
         "flex-direction": "column"
       }
     },
-    "secondwebview": {
-      "id": "1",
-      "launch_path": "__uniappview.html",
-      "kernel": "WKWebview"
+    "tabBar": {
+      "color": "#7a7e83",
+      "selectedColor": "#0faeff",
+      "backgroundColor": "#ffffff",
+      "list": [
+        {
+          "pagePath": "pages/main/main",
+          "text": "身体数据",
+          "iconPath": "static/img/home.png",
+          "selectedIconPath": "static/img/homeHL.png"
+        },
+        {
+          "pagePath": "pages/food/food_menu/index",
+          "text": "食堂",
+          "iconPath": "static/img/tab-cart.png",
+          "selectedIconPath": "static/img/tab-cart-current.png"
+        },
+        {
+          "pagePath": "pages/user/user",
+          "text": "个人中心",
+          "iconPath": "static/img/user.png",
+          "selectedIconPath": "static/img/userHL.png"
+        }
+      ],
+      "borderStyle": "rgba(0,0,0,0.4)",
+      "height": "50px"
     }
   }
 }

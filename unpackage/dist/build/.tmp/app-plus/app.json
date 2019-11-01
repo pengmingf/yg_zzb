@@ -49,7 +49,7 @@
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
-  "appname": "健身管理",
-  "compilerVersion": "2.3.3",
+  "appname": "Edison.F",
+  "compilerVersion": "2.3.7",
   "usingComponents": {}
 }

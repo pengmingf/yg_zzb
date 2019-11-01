@@ -2608,6 +2608,9 @@ __wxAppCode__['pages/reg/reg.wxml']=$gwx('./pages/reg/reg.wxml');
 __wxAppCode__['pages/test/test.wxss']=undefined;    
 __wxAppCode__['pages/test/test.wxml']=$gwx('./pages/test/test.wxml');
 
+__wxAppCode__['pages/tuser_weight/tuser_weight.wxss']=undefined;    
+__wxAppCode__['pages/tuser_weight/tuser_weight.wxml']=$gwx('./pages/tuser_weight/tuser_weight.wxml');
+
 __wxAppCode__['pages/user/user_show.wxss']=setCssToHead(["wx-view{ font-size: ",[0,18],"; }\n",],undefined,{path:"./pages/user/user_show.wxss"});    
 __wxAppCode__['pages/user/user_show.wxml']=$gwx('./pages/user/user_show.wxml');
 

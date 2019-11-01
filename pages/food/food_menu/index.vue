@@ -98,6 +98,13 @@ export default {
 										showCancel:false
 									})  
 								}
+								else if(res.data.code == 3)
+								{
+									uni.showModal({
+										content:"该商品已下架",
+										showCancel:false
+									})  
+								}
 								else{
 									uni.showModal({
 										content:"预订失败",
@@ -161,15 +168,15 @@ export default {
             this.renderImage = true; 
         }, 300);
     },
-    onPullDownRefresh() {
-        this.loadData('refresh');
-        setTimeout(() => {
-            uni.stopPullDownRefresh();
-        }, 3000);
-    },
-    onReachBottom() {
-        this.loadData();
-    }
+    // onPullDownRefresh() {
+    //     this.loadData('refresh');
+    //     setTimeout(() => {
+    //         uni.stopPullDownRefresh();
+    //     }, 3000);
+    // },
+    // onReachBottom() {
+    //     this.loadData();
+    // }
 };
 </script>
 

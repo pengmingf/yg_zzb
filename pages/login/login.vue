@@ -200,7 +200,13 @@
         onReady() {
             this.initPosition();
             this.initProvider();
-        }
+        },
+		onLoad() {
+			if(uni.getStorageSync('tuser_id'))
+			{
+				this.toMain('tuser_id');
+			}
+		}
     }
 </script>
 

@@ -11,7 +11,8 @@
     "pages/msg/msg",
     "pages/userManage/userManage",
     "components/u-charts-body/u-charts-body",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/tuser_weight/tuser_weight"
   ],
   "window": {
     "navigationBarTextStyle": "white",
@@ -49,7 +50,7 @@
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
-  "appname": "健身管理",
-  "compilerVersion": "2.3.3",
+  "appname": "Edison.F",
+  "compilerVersion": "2.3.7",
   "usingComponents": {}
 }
