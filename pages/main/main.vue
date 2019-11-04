@@ -6,13 +6,16 @@
 					<view class="page-section-spacing">
 						<swiper class="swiper" :indicator-dots="true" :autoplay="true" :interval="5000" :duration="500">
 							<swiper-item class="swiper-item">
-								<image src="http://ygjs.mfmeat.top/static/image/1.jpg" />
+								<image src="https://ygjs.oss-cn-chengdu.aliyuncs.com/jl1.jpg" />
 							</swiper-item> 
 							<swiper-item class="swiper-item">
-								<image src="http://ygjs.mfmeat.top/static/image/2.jpg" />
+								<image src="https://ygjs.oss-cn-chengdu.aliyuncs.com/jl2.jpg" />
 							</swiper-item> 
 							<swiper-item class="swiper-item">
-								<image src="http://ygjs.mfmeat.top/static/image/3.jpg" />
+								<image src="https://ygjs.oss-cn-chengdu.aliyuncs.com/jl3.jpg" />
+							</swiper-item> 
+							<swiper-item class="swiper-item">
+								<image src="https://ygjs.oss-cn-chengdu.aliyuncs.com/jl4.jpg" />
 							</swiper-item> 
 						</swiper>
 					</view>
@@ -89,6 +92,7 @@
 		},
 		/*这里设置右上角消息触碰事件*/
 		onNavigationBarButtonTap(e) {
+			
 			uni.showLoading({
 				title:"跳转中，请稍后"
 			});
@@ -225,7 +229,7 @@
 					currentWebview.hideTitleNViewButtonRedDot({index:index})
 					currentWebview.removeTitleNViewButtonBadge({index:index})
 				}
-				
+				//#ifndef
 				// #endif
 			}
 		}, 

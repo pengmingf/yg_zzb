@@ -33,7 +33,7 @@ export default
 				dataType:'json',
 				success: (res) => {
 					this.food = res.data
-					this.image ='https://ygjs.mfmeat.top/static/image/'+res.data.image 
+					this.image =res.data.image 
 				}
 			})
 		},
