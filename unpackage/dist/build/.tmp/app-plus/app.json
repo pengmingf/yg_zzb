@@ -11,7 +11,8 @@
     "pages/msg/msg",
     "pages/userManage/userManage",
     "components/u-charts-body/u-charts-body",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/user/daka"
   ],
   "window": {
     "navigationBarTextStyle": "white",
@@ -31,7 +32,7 @@
       },
       {
         "pagePath": "pages/food/food_menu/index",
-        "text": "食堂",
+        "text": "饮食管理",
         "iconPath": "static/img/tab-cart.png",
         "selectedIconPath": "static/img/tab-cart-current.png"
       },
@@ -49,7 +50,7 @@
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
-  "appname": "Edison.F",
+  "appname": "艾迪森健身模特管家",
   "compilerVersion": "2.3.7",
   "usingComponents": {}
 }

@@ -5,7 +5,7 @@
     "iPad"
   ],
   "id": "__UNI__998F93B",
-  "name": "Edison.F",
+  "name": "艾迪森健身模特管家",
   "version": {
     "name": "1.0.0",
     "code": "100"
@@ -83,9 +83,9 @@
       },
       "splashscreen": {
         "android": {
-          "hdpi": "C:/Users/Administrator/Desktop/480.png",
-          "xhdpi": "C:/Users/Administrator/Desktop/720.png",
-          "xxhdpi": "C:/Users/Administrator/Desktop/1080.png"
+          "hdpi": "C:/Users/Administrator/Desktop/zzz/zzz.png",
+          "xhdpi": "C:/Users/Administrator/Desktop/zzz/720X1242.png",
+          "xxhdpi": "C:/Users/Administrator/Desktop/zzz/1080X1882.png"
         }
       },
       "google": {
@@ -174,7 +174,7 @@
         },
         {
           "pagePath": "pages/food/food_menu/index",
-          "text": "食堂",
+          "text": "饮食管理",
           "iconPath": "static/img/tab-cart.png",
           "selectedIconPath": "static/img/tab-cart-current.png"
         },

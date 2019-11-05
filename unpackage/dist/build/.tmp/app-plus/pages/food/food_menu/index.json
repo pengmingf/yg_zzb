@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "食堂",
+  "navigationBarTitleText": "健康饮食管理",
   "usingComponents": {
     "uni-segmented-control": "/components/uni-segmented-control/uni-segmented-control"
   }

@@ -20,7 +20,7 @@
 			</view>
 		</view>
 		<view class="center-list">
-			<view class="center-list-item border-bottom" @click="noopen">
+			<view class="center-list-item border-bottom" @click="daka">
 				<text class="list-icon">&#xe60b;</text>
 				<text class="list-text">打卡记录</text>
 				<text class="navigat-arrow">&#xe65e;</text>
@@ -114,6 +114,11 @@
 					url: './user_show'
 				});
 			}, 
+			daka() {
+				uni.navigateTo({
+					url:'./daka'
+				});
+			},
 			goBody(){
 				uni.showToast({
 					title:"请前往首页查看",

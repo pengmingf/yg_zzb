@@ -94,9 +94,9 @@
             },
             "splashscreen" : {
                 "android" : {
-                    "hdpi" : "C:/Users/Administrator/Desktop/480.png",
-                    "xhdpi" : "C:/Users/Administrator/Desktop/720.png",
-                    "xxhdpi" : "C:/Users/Administrator/Desktop/1080.png"
+                    "hdpi" : "C:/Users/Administrator/Desktop/zzz/zzz.png",
+                    "xhdpi" : "C:/Users/Administrator/Desktop/zzz/720X1242.png",
+                    "xxhdpi" : "C:/Users/Administrator/Desktop/zzz/1080X1882.png"
                 }
             }
         },

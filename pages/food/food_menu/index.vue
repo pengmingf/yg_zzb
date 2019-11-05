@@ -34,6 +34,7 @@
 						<view class="uni-product-price">
 							<text class="uni-product-price-original">￥{{product.originalPrice || 0}}</text>
 							<text class="uni-product-tip" @click="yuding(product)">{{product.tip}}</text>
+							<text class="uni-product-tip" style="margin-right: 90upx;" @click="qx_yuding(product)">取消</text>
 						</view>
 					</view> 
 				</view>
@@ -159,6 +160,36 @@ export default {
 		foodDetail(product){
 			uni.navigateTo({
 				url:"detail?id="+product.Id
+			})
+		},
+		qx_yuding(product){
+			uni.showModal({
+				content:'如果餐品已经做出，此刻您取消也是无效的，你确定要取消预定吗?',
+				success: (res) => {
+					if(res.confirm)
+					{
+						uni.request({
+							url:"https://ygjs.mfmeat.top/index.php/api/food/qxyuding",
+							data:{'tuser':this.tuser_id,'foodId':product.Id},
+							method:"POST",
+							dataType:'json',
+							success: (res) => {
+								if(res.data.code != 1)
+								{
+									uni.showModal({
+										content:res.data.message,
+										showCancel:false
+									});
+								}else{
+									uni.showToast({
+										title:'取消预订成功',
+										icon:'none'
+									})
+								}
+							}
+						})
+					}
+				}
 			})
 		}
     },

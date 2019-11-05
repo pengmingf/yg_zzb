@@ -1,28 +1,62 @@
 <script>
 	export default {
 		onLaunch: function() {
-			// uni.getProvider({
-			//     service: 'push',
-			//     success: function (res) {
-			//         console.log(res) 
-			// 		uni.subscribePush({
-			// 			provider: res.provider,
-			// 			success: function (res) {
-			// 				console.log('success:' + JSON.stringify(res));
-			// 			}
-			// 		});
-			//     }
-			// });
-			// plus.push.addEventListener("receive",function(msg){
-			// 	console.log(msg)
-			// })
-			// plus.push.addEventListener("click",function(){
-			// 	uni.showModal({
-			// 		content:"从消息中心进来的吧"
-			// 	}) 
-			// })
-			console.log('App Launch');
-			
+			var version = plus.runtime.version;
+			uni.request({
+				url:'https://ygjs.mfmeat.top/index.php/api/main/checkUpdateUser',
+				method:'POST',
+				dataType:'json',
+				success: (res) => {
+					if(version < res.data.version)
+					{
+						var wgeturl = res.data.wgeturl;
+						uni.showModal({
+							title: "版本更新",
+							content: '有新的版本发布，检测到您当前为Wifi连接，是否立即进行新版本下载？',
+							confirmText:'立即更新',
+							// cancelText:'稍后进行',
+							showCancel:false,
+							success: function (res) 
+							{
+								if (res.confirm) {
+									uni.showToast({
+										icon:"none",
+										mask: true,
+										title: '有新的版本发布，程序已启动自动更新。新版本下载完成后将自动弹出安装程序',  
+										duration: 5000,  
+									}); 
+									uni.showLoading({
+										title:'下载中，请稍后...',
+									})
+									//设置 最新版本apk的下载链接
+									var downloadApkUrl = wgeturl;
+									var dtask = plus.downloader.createDownload( downloadApkUrl, {}, function ( d, status ) {  
+											// 下载完成  
+											if ( status == 200 ) {
+												uni.hideLoading();
+												plus.runtime.install(plus.io.convertLocalFileSystemURL(d.filename),{},{},function(error){  
+													uni.showToast({  
+														title: '安装失败', 
+														icon:'none',
+														duration: 1500  
+													});  
+												})
+											} else {  
+												 uni.showToast({  
+													title: '更新失败',
+													duration: 1500  
+												 });  
+											}    
+										});  
+									dtask.start();
+								} else if (res.cancel) {
+									console.log('稍后更新');
+								}
+							},
+						});
+					}
+				}
+			})
 		},
 		onShow: function() {
 			console.log('App Show');
