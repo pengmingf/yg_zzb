@@ -4,10 +4,27 @@
 			<uni-segmented-control :current="current" :values="items" :style-type="styleType" :active-color="activeColor" @clickItem="onClickItem" />
 		</view>
 		<!-- <view class="content"> -->
+		<!-- 早餐特供 -->
+		<view v-show="current === 0">
+			<view class="uni-product-list">
+				<view class="uni-product" v-for="(product,index) in breakfast_list" :key="index">
+					<view class="image-view">
+						<image v-if="renderImage" class="uni-product-image" :src="product.image"></image>
+					</view>
+					<view class="uni-product-title">{{product.name}}</view> 
+					<view class="uni-product-price">
+						<text class="uni-product-price-original">￥{{product.originalPrice || 0}}</text>
+						<!-- <text class="uni-product-tip" @click="yuding(product)">{{product.tip}}</text>
+						<text class="uni-product-tip" style="margin-right: 90upx;" @click="qx_yuding(product)">取消</text> -->
+					</view>
+				</view> 
+			</view>
+		</view>
+		
 		<!-- 做菜列表 -->
-			<view v-show="current === 0">
+			<view v-show="current === 1">
 				<view class="uni-product-list">
-					<view class="uni-product" v-for="(product,index) in productList" :key="index" @click="foodDetail(product)">
+					<view class="uni-product" v-for="(product,index) in productList" :key="index" >
 						<view class="image-view">
 							<image v-if="renderImage" class="uni-product-image" :src="product.image"></image>
 						</view>
@@ -23,8 +40,9 @@
 					</view> 
 				</view>
 			</view>
+			
 			<!-- 今日特供 -->
-			<view v-show="current === 1">
+			<view v-show="current === 2">
 				<view class="uni-product-list">
 					<view class="uni-product" v-for="(product,index) in foodList" :key="index">
 						<view class="image-view">
@@ -52,12 +70,13 @@ export default {
 	},
     data() {
         return {
-			items: ['菜谱', '明日特供'],
+			items: ['早餐', '正餐', '明日特供'],
 			styleType: 'button',
 			activeColor: '#007aff',
 			current: 0,
 			productList: [],		//菜谱
 			foodList:[],			//今日特供
+			breakfast_list:[],
             renderImage: false,
 			tuser_id:uni.getStorageSync('tuser_id')
         };
@@ -139,12 +158,15 @@ export default {
 				url:"https://ygjs.mfmeat.top/index.php/api/food/menu",
 				dataType:"json",
 				success: (res) => {
-					// console.log(res.data);
+					console.log(res.data);
 					res.data.productList.forEach(item => { 
 						this.productList.push(item); 
 					}),
 					res.data.foodList.forEach(item => {
 						this.foodList.push(item); 
+					}),
+					res.data.breakfastList.forEach(item => {
+						this.breakfast_list.push(item); 
 					})
 				}
 			})

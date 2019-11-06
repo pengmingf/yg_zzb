@@ -102,11 +102,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/m-input":1,"components/uni-segmented-control/uni-segmented-control":1,"components/m-icon/m-icon":1};
+/******/ 		var cssChunks = {"components/m-input":1,"components/uni-segmented-control/uni-segmented-control":1,"components/uni-calendar/uni-calendar":1,"components/m-icon/m-icon":1,"components/uni-calendar/uni-calendar-item":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/m-input":"components/m-input","components/uni-segmented-control/uni-segmented-control":"components/uni-segmented-control/uni-segmented-control","components/m-icon/m-icon":"components/m-icon/m-icon"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/m-input":"components/m-input","components/uni-segmented-control/uni-segmented-control":"components/uni-segmented-control/uni-segmented-control","components/uni-calendar/uni-calendar":"components/uni-calendar/uni-calendar","components/m-icon/m-icon":"components/m-icon/m-icon","components/uni-calendar/uni-calendar-item":"components/uni-calendar/uni-calendar-item"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

@@ -1157,19 +1157,22 @@ Z([[7],[3,'items']])
 Z([3,'1'])
 Z([3,'index'])
 Z([3,'product'])
+Z([[7],[3,'breakfast_list']])
+Z(z[9])
+Z([[7],[3,'renderImage']])
+Z(z[9])
+Z(z[10])
 Z([[7],[3,'productList']])
 Z(z[9])
-Z(z[3])
 Z([3,'uni-product'])
-Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[[5],[1,'foodDetail']],[[4],[[5],[1,'$0']]]],[[4],[[5],[[4],[[5],[[4],[[5],[[5],[[5],[1,'productList']],[1,'']],[[7],[3,'index']]]]]]]]]]]]]]]])
-Z([[7],[3,'renderImage']])
+Z(z[13])
 Z([[6],[[7],[3,'product']],[3,'favourPrice']])
 Z([[2,'!'],[[6],[[7],[3,'product']],[3,'favourPrice']]])
 Z(z[9])
 Z(z[10])
 Z([[7],[3,'foodList']])
 Z(z[9])
-Z(z[16])
+Z(z[13])
 })(__WXML_GLOBAL__.ops_cached.$gwx_8);return __WXML_GLOBAL__.ops_cached.$gwx_8
 }
 function gz$gwx_9(){
@@ -1292,10 +1295,6 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_16)return __WXML_GLOBAL__.ops_cached.$gwx_16
 __WXML_GLOBAL__.ops_cached.$gwx_16=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'center'])
-Z([3,'__e'])
-Z([3,'logo'])
-Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'goLogin']],[[4],[[5],[1,'$event']]]]]]]]]]])
-Z([[2,'?:'],[[2,'!'],[[7],[3,'login']]],[1,'logo-hover'],[1,'']])
 Z([[2,'!'],[[7],[3,'login']]])
 Z([[7],[3,'login']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_16);return __WXML_GLOBAL__.ops_cached.$gwx_16
@@ -1452,39 +1451,52 @@ _(lCB,aDB)
 var tEB=_v()
 _(lCB,tEB)
 var eFB=function(oHB,bGB,xIB,gg){
-var fKB=_mz(z,'view',['bindtap',13,'class',1,'data-event-opts',2],[],oHB,bGB,gg)
-var cLB=_v()
-_(fKB,cLB)
-if(_oz(z,16,oHB,bGB,gg)){cLB.wxVkey=1
-}
-var hMB=_v()
-_(fKB,hMB)
-if(_oz(z,17,oHB,bGB,gg)){hMB.wxVkey=1
-}
-var oNB=_v()
-_(fKB,oNB)
-if(_oz(z,18,oHB,bGB,gg)){oNB.wxVkey=1
-}
-cLB.wxXCkey=1
-hMB.wxXCkey=1
-oNB.wxXCkey=1
+var fKB=_v()
 _(xIB,fKB)
+if(_oz(z,13,oHB,bGB,gg)){fKB.wxVkey=1
+}
+fKB.wxXCkey=1
 return xIB
 }
 tEB.wxXCkey=2
 _2z(z,11,eFB,e,s,gg,tEB,'product','index','index')
-var cOB=_v()
-_(lCB,cOB)
-var oPB=function(aRB,lQB,tSB,gg){
+var cLB=_v()
+_(lCB,cLB)
+var hMB=function(cOB,oNB,oPB,gg){
+var aRB=_n('view')
+_rz(z,aRB,'class',18,cOB,oNB,gg)
+var tSB=_v()
+_(aRB,tSB)
+if(_oz(z,19,cOB,oNB,gg)){tSB.wxVkey=1
+}
+var eTB=_v()
+_(aRB,eTB)
+if(_oz(z,20,cOB,oNB,gg)){eTB.wxVkey=1
+}
 var bUB=_v()
-_(tSB,bUB)
-if(_oz(z,23,aRB,lQB,gg)){bUB.wxVkey=1
+_(aRB,bUB)
+if(_oz(z,21,cOB,oNB,gg)){bUB.wxVkey=1
 }
+tSB.wxXCkey=1
+eTB.wxXCkey=1
 bUB.wxXCkey=1
-return tSB
+_(oPB,aRB)
+return oPB
 }
-cOB.wxXCkey=2
-_2z(z,21,oPB,e,s,gg,cOB,'product','index','index')
+cLB.wxXCkey=2
+_2z(z,16,hMB,e,s,gg,cLB,'product','index','index')
+var oVB=_v()
+_(lCB,oVB)
+var xWB=function(fYB,oXB,cZB,gg){
+var o2B=_v()
+_(cZB,o2B)
+if(_oz(z,26,fYB,oXB,gg)){o2B.wxVkey=1
+}
+o2B.wxXCkey=1
+return cZB
+}
+oVB.wxXCkey=2
+_2z(z,24,xWB,e,s,gg,oVB,'product','index','index')
 _(r,lCB)
 return r
 }
@@ -1492,63 +1504,63 @@ e_[x[7]]={f:m7,j:[],i:[],ti:[],ic:[]}
 d_[x[8]]={}
 var m8=function(e,s,r,gg){
 var z=gz$gwx_9()
-var xWB=_n('view')
-_rz(z,xWB,'class',0,e,s,gg)
-var fYB=_n('view')
-_rz(z,fYB,'class',1,e,s,gg)
-var cZB=_mz(z,'m-input',['clearable',-1,'focus',-1,'bind:__l',2,'bind:input',1,'class',2,'data-event-opts',3,'placeholder',4,'type',5,'value',6,'vueId',7],[],e,s,gg)
-_(fYB,cZB)
-var h1B=_mz(z,'m-input',['displayable',-1,'bind:__l',10,'bind:input',1,'data-event-opts',2,'placeholder',3,'type',4,'value',5,'vueId',6],[],e,s,gg)
-_(fYB,h1B)
-_(xWB,fYB)
-var oXB=_v()
-_(xWB,oXB)
-if(_oz(z,17,e,s,gg)){oXB.wxVkey=1
+var o4B=_n('view')
+_rz(z,o4B,'class',0,e,s,gg)
+var a6B=_n('view')
+_rz(z,a6B,'class',1,e,s,gg)
+var t7B=_mz(z,'m-input',['clearable',-1,'focus',-1,'bind:__l',2,'bind:input',1,'class',2,'data-event-opts',3,'placeholder',4,'type',5,'value',6,'vueId',7],[],e,s,gg)
+_(a6B,t7B)
+var e8B=_mz(z,'m-input',['displayable',-1,'bind:__l',10,'bind:input',1,'data-event-opts',2,'placeholder',3,'type',4,'value',5,'vueId',6],[],e,s,gg)
+_(a6B,e8B)
+_(o4B,a6B)
+var l5B=_v()
+_(o4B,l5B)
+if(_oz(z,17,e,s,gg)){l5B.wxVkey=1
 }
-oXB.wxXCkey=1
-_(r,xWB)
+l5B.wxXCkey=1
+_(r,o4B)
 return r
 }
 e_[x[8]]={f:m8,j:[],i:[],ti:[],ic:[]}
 d_[x[9]]={}
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
-var c3B=_mz(z,'uni-charts-body',['bind:__l',0,'vueId',1,'vueSlots',1],[],e,s,gg)
-_(r,c3B)
+var o0B=_mz(z,'uni-charts-body',['bind:__l',0,'vueId',1,'vueSlots',1],[],e,s,gg)
+_(r,o0B)
 return r
 }
 e_[x[9]]={f:m9,j:[],i:[],ti:[],ic:[]}
 d_[x[10]]={}
 var m10=function(e,s,r,gg){
 var z=gz$gwx_11()
-var l5B=_v()
-_(r,l5B)
-if(_oz(z,0,e,s,gg)){l5B.wxVkey=1
+var oBC=_v()
+_(r,oBC)
+if(_oz(z,0,e,s,gg)){oBC.wxVkey=1
 }
-l5B.wxXCkey=1
+oBC.wxXCkey=1
 return r
 }
 e_[x[10]]={f:m10,j:[],i:[],ti:[],ic:[]}
 d_[x[11]]={}
 var m11=function(e,s,r,gg){
 var z=gz$gwx_12()
-var t7B=_mz(z,'m-input',['clearable',-1,'focus',-1,'bind:__l',0,'bind:input',1,'data-event-opts',1,'placeholder',2,'type',3,'value',4,'vueId',5],[],e,s,gg)
-_(r,t7B)
+var cDC=_mz(z,'m-input',['clearable',-1,'focus',-1,'bind:__l',0,'bind:input',1,'data-event-opts',1,'placeholder',2,'type',3,'value',4,'vueId',5],[],e,s,gg)
+_(r,cDC)
 return r
 }
 e_[x[11]]={f:m11,j:[],i:[],ti:[],ic:[]}
 d_[x[12]]={}
 var m12=function(e,s,r,gg){
 var z=gz$gwx_13()
-var b9B=_n('view')
-_rz(z,b9B,'class',0,e,s,gg)
-var o0B=_mz(z,'m-input',['clearable',-1,'focus',-1,'bind:__l',1,'bind:input',1,'data-event-opts',2,'placeholder',3,'type',4,'value',5,'vueId',6],[],e,s,gg)
-_(b9B,o0B)
-var xAC=_mz(z,'m-input',['displayable',-1,'bind:__l',8,'bind:input',1,'data-event-opts',2,'placeholder',3,'type',4,'value',5,'vueId',6],[],e,s,gg)
-_(b9B,xAC)
-var oBC=_mz(z,'m-input',['clearable',-1,'bind:__l',15,'bind:input',1,'data-event-opts',2,'placeholder',3,'type',4,'value',5,'vueId',6],[],e,s,gg)
-_(b9B,oBC)
-_(r,b9B)
+var oFC=_n('view')
+_rz(z,oFC,'class',0,e,s,gg)
+var cGC=_mz(z,'m-input',['clearable',-1,'focus',-1,'bind:__l',1,'bind:input',1,'data-event-opts',2,'placeholder',3,'type',4,'value',5,'vueId',6],[],e,s,gg)
+_(oFC,cGC)
+var oHC=_mz(z,'m-input',['displayable',-1,'bind:__l',8,'bind:input',1,'data-event-opts',2,'placeholder',3,'type',4,'value',5,'vueId',6],[],e,s,gg)
+_(oFC,oHC)
+var lIC=_mz(z,'m-input',['clearable',-1,'bind:__l',15,'bind:input',1,'data-event-opts',2,'placeholder',3,'type',4,'value',5,'vueId',6],[],e,s,gg)
+_(oFC,lIC)
+_(r,oFC)
 return r
 }
 e_[x[12]]={f:m12,j:[],i:[],ti:[],ic:[]}
@@ -1561,78 +1573,76 @@ e_[x[13]]={f:m13,j:[],i:[],ti:[],ic:[]}
 d_[x[14]]={}
 var m14=function(e,s,r,gg){
 var z=gz$gwx_15()
-var hEC=_v()
-_(r,hEC)
-if(_oz(z,0,e,s,gg)){hEC.wxVkey=1
-var oFC=_n('view')
-var cGC=_mz(z,'uni-calendar',['bind:__l',1,'bind:change',1,'data-event-opts',2,'date',3,'disableBefore',4,'endDate',5,'insert',6,'lunar',7,'range',8,'selected',9,'startDate',10,'vueId',11],[],e,s,gg)
-_(oFC,cGC)
-var oHC=_n('view')
-_rz(z,oHC,'class',13,e,s,gg)
-var lIC=_v()
-_(oHC,lIC)
-if(_oz(z,14,e,s,gg)){lIC.wxVkey=1
-}
-var aJC=_v()
-_(oHC,aJC)
-if(_oz(z,15,e,s,gg)){aJC.wxVkey=1
-var tKC=_n('view')
-_rz(z,tKC,'class',16,e,s,gg)
 var eLC=_v()
-_(tKC,eLC)
-if(_oz(z,17,e,s,gg)){eLC.wxVkey=1
-}
-var bMC=_v()
-_(tKC,bMC)
-if(_oz(z,18,e,s,gg)){bMC.wxVkey=1
-}
-var oNC=_v()
-_(tKC,oNC)
-if(_oz(z,19,e,s,gg)){oNC.wxVkey=1
-}
-var xOC=_v()
-_(tKC,xOC)
-if(_oz(z,20,e,s,gg)){xOC.wxVkey=1
-}
+_(r,eLC)
+if(_oz(z,0,e,s,gg)){eLC.wxVkey=1
+var bMC=_n('view')
+var oNC=_mz(z,'uni-calendar',['bind:__l',1,'bind:change',1,'data-event-opts',2,'date',3,'disableBefore',4,'endDate',5,'insert',6,'lunar',7,'range',8,'selected',9,'startDate',10,'vueId',11],[],e,s,gg)
+_(bMC,oNC)
+var xOC=_n('view')
+_rz(z,xOC,'class',13,e,s,gg)
 var oPC=_v()
-_(tKC,oPC)
-if(_oz(z,21,e,s,gg)){oPC.wxVkey=1
+_(xOC,oPC)
+if(_oz(z,14,e,s,gg)){oPC.wxVkey=1
+}
+var fQC=_v()
+_(xOC,fQC)
+if(_oz(z,15,e,s,gg)){fQC.wxVkey=1
+var cRC=_n('view')
+_rz(z,cRC,'class',16,e,s,gg)
+var hSC=_v()
+_(cRC,hSC)
+if(_oz(z,17,e,s,gg)){hSC.wxVkey=1
+}
+var oTC=_v()
+_(cRC,oTC)
+if(_oz(z,18,e,s,gg)){oTC.wxVkey=1
+}
+var cUC=_v()
+_(cRC,cUC)
+if(_oz(z,19,e,s,gg)){cUC.wxVkey=1
+}
+var oVC=_v()
+_(cRC,oVC)
+if(_oz(z,20,e,s,gg)){oVC.wxVkey=1
+}
+var lWC=_v()
+_(cRC,lWC)
+if(_oz(z,21,e,s,gg)){lWC.wxVkey=1
+}
+hSC.wxXCkey=1
+oTC.wxXCkey=1
+cUC.wxXCkey=1
+oVC.wxXCkey=1
+lWC.wxXCkey=1
+_(fQC,cRC)
+}
+oPC.wxXCkey=1
+fQC.wxXCkey=1
+_(bMC,xOC)
+_(eLC,bMC)
 }
 eLC.wxXCkey=1
-bMC.wxXCkey=1
-oNC.wxXCkey=1
-xOC.wxXCkey=1
-oPC.wxXCkey=1
-_(aJC,tKC)
-}
-lIC.wxXCkey=1
-aJC.wxXCkey=1
-_(oFC,oHC)
-_(hEC,oFC)
-}
-hEC.wxXCkey=1
-hEC.wxXCkey=3
+eLC.wxXCkey=3
 return r
 }
 e_[x[14]]={f:m14,j:[],i:[],ti:[],ic:[]}
 d_[x[15]]={}
 var m15=function(e,s,r,gg){
 var z=gz$gwx_16()
-var cRC=_n('view')
-_rz(z,cRC,'class',0,e,s,gg)
-var oTC=_mz(z,'view',['bindtap',1,'class',1,'data-event-opts',2,'hoverClass',3],[],e,s,gg)
-var cUC=_v()
-_(oTC,cUC)
-if(_oz(z,5,e,s,gg)){cUC.wxVkey=1
+var tYC=_n('view')
+_rz(z,tYC,'class',0,e,s,gg)
+var eZC=_v()
+_(tYC,eZC)
+if(_oz(z,1,e,s,gg)){eZC.wxVkey=1
 }
-cUC.wxXCkey=1
-_(cRC,oTC)
-var hSC=_v()
-_(cRC,hSC)
-if(_oz(z,6,e,s,gg)){hSC.wxVkey=1
+var b1C=_v()
+_(tYC,b1C)
+if(_oz(z,2,e,s,gg)){b1C.wxVkey=1
 }
-hSC.wxXCkey=1
-_(r,cRC)
+eZC.wxXCkey=1
+b1C.wxXCkey=1
+_(r,tYC)
 return r
 }
 e_[x[15]]={f:m15,j:[],i:[],ti:[],ic:[]}
@@ -1725,7 +1735,7 @@ __wxAppCode__['pages/userManage/userManage.wxml']=$gwx('./pages/userManage/userM
 
 
 define('common/main.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["common/main"],{"0701":function(t,e,n){"use strict";var o=n("47c2"),u=n.n(o);u.a},"47c2":function(t,e,n){},"62e8":function(t,e,n){"use strict";(function(t){n("9217"),n("921b");var e=a(n("66fd")),o=a(n("9c2c")),u=a(n("10b1"));function a(t){return t&&t.__esModule?t:{default:t}}function c(t){for(var e=1;e<arguments.length;e++){var n=null!=arguments[e]?arguments[e]:{},o=Object.keys(n);"function"===typeof Object.getOwnPropertySymbols&&(o=o.concat(Object.getOwnPropertySymbols(n).filter(function(t){return Object.getOwnPropertyDescriptor(n,t).enumerable}))),o.forEach(function(e){i(t,e,n[e])})}return t}function i(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}e.default.config.productionTip=!1,e.default.prototype.$store=u.default,o.default.mpType="app";var r=new e.default(c({store:u.default},o.default));t(r).$mount()}).call(this,n("6e42")["createApp"])},"9c2c":function(t,e,n){"use strict";n.r(e);var o=n("d566");for(var u in o)"default"!==u&&function(t){n.d(e,t,function(){return o[t]})}(u);n("0701");var a,c,i=n("2877"),r=Object(i["a"])(o["default"],a,c,!1,null,null,null);e["default"]=r.exports},c2bb:function(t,e,n){"use strict";(function(t,n){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var o={onLaunch:function(){var e=plus.runtime.version;t.request({url:"https://ygjs.mfmeat.top/index.php/api/main/checkUpdateUser",method:"POST",dataType:"json",success:function(o){if(e<o.data.version){var u=o.data.wgeturl;t.showModal({title:"版本更新",content:"有新的版本发布，检测到您当前为Wifi连接，是否立即进行新版本下载？",confirmText:"立即更新",showCancel:!1,success:function(e){if(e.confirm){t.showToast({icon:"none",mask:!0,title:"有新的版本发布，程序已启动自动更新。新版本下载完成后将自动弹出安装程序",duration:5e3}),t.showLoading({title:"下载中，请稍后..."});var o=u,a=plus.downloader.createDownload(o,{},function(e,n){200==n?(t.hideLoading(),plus.runtime.install(plus.io.convertLocalFileSystemURL(e.filename),{},{},function(e){t.showToast({title:"安装失败",icon:"none",duration:1500})})):t.showToast({title:"更新失败",duration:1500})});a.start()}else e.cancel&&console.log(n("稍后更新"," at App.vue:53"))}})}}})},onShow:function(){console.log(n("App Show"," at App.vue:62"))},onHide:function(){console.log(n("App Hide"," at App.vue:65"))}};e.default=o}).call(this,n("6e42")["default"],n("0de9")["default"])},d566:function(t,e,n){"use strict";n.r(e);var o=n("c2bb"),u=n.n(o);for(var a in o)"default"!==a&&function(t){n.d(e,t,function(){return o[t]})}(a);e["default"]=u.a}},[["62e8","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["common/main"],{"0701":function(e,t,n){"use strict";var o=n("47c2"),u=n.n(o);u.a},"47c2":function(e,t,n){},"62e8":function(e,t,n){"use strict";(function(e){n("9217"),n("921b");var t=a(n("66fd")),o=a(n("9c2c")),u=a(n("10b1"));function a(e){return e&&e.__esModule?e:{default:e}}function c(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{},o=Object.keys(n);"function"===typeof Object.getOwnPropertySymbols&&(o=o.concat(Object.getOwnPropertySymbols(n).filter(function(e){return Object.getOwnPropertyDescriptor(n,e).enumerable}))),o.forEach(function(t){l(e,t,n[t])})}return e}function l(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}t.default.config.productionTip=!1,t.default.prototype.$store=u.default,o.default.mpType="app";var r=new t.default(c({store:u.default},o.default));e(r).$mount()}).call(this,n("6e42")["createApp"])},"9c2c":function(e,t,n){"use strict";n.r(t);var o=n("d566");for(var u in o)"default"!==u&&function(e){n.d(t,e,function(){return o[e]})}(u);n("0701");var a,c,l=n("2877"),r=Object(l["a"])(o["default"],a,c,!1,null,null,null);t["default"]=r.exports},c2bb:function(e,t,n){"use strict";(function(e,n){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var o={onLaunch:function(){var t=plus.runtime.version;e.request({url:"https://ygjs.mfmeat.top/index.php/api/main/checkUpdateUser",method:"POST",dataType:"json",success:function(o){if(t<o.data.version){var u=o.data.wgeturl;e.showModal({title:"版本更新",content:"有新的版本发布，是否立即进行新版本下载？",confirmText:"立即更新",showCancel:!1,success:function(t){if(t.confirm){e.showToast({icon:"none",mask:!0,title:"有新的版本发布，程序已启动自动更新。新版本下载完成后将自动弹出安装程序",duration:5e3});var a=u,c=plus.downloader.createDownload(a,{},function(t,o){200==o?(console.log(n("success:"," at App.vue:39")),console.log(n(c," at App.vue:40")),plus.runtime.install(plus.io.convertLocalFileSystemURL(t.filename),{},function(){e.showToast({title:"安装成功",duration:1500})},function(t){e.showToast({title:"安装失败",icon:"none",duration:1500})})):(console.log(n("fail:"," at App.vue:54")),console.log(n(c," at App.vue:55")),e.showToast({title:"更新失败",duration:1500}))});c.start()}else o.cancel&&console.log(n("稍后更新"," at App.vue:64"))}})}}})},onShow:function(){console.log(n("App Show"," at App.vue:74"))},onHide:function(){console.log(n("App Hide"," at App.vue:77"))}};t.default=o}).call(this,n("6e42")["default"],n("0de9")["default"])},d566:function(e,t,n){"use strict";n.r(t);var o=n("c2bb"),u=n.n(o);for(var a in o)"default"!==a&&function(e){n.d(t,e,function(){return o[e]})}(a);t["default"]=u.a}},[["62e8","common/runtime","common/vendor"]]]);
 });
 define('common/runtime.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
 "use strict";
@@ -2880,7 +2890,7 @@ require('pages/login/login.js');
 __wxRoute = 'pages/food/food_menu/index';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/food/food_menu/index.js';
 
 define('pages/food/food_menu/index.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/food/food_menu/index"],{2842:function(t,n,o){"use strict";(function(t){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var e=function(){return o.e("components/uni-segmented-control/uni-segmented-control").then(o.bind(null,"6739"))},a={components:{uniSegmentedControl:e},data:function(){return{items:["菜谱","明日特供"],styleType:"button",activeColor:"#007aff",current:0,productList:[],foodList:[],renderImage:!1,tuser_id:t.getStorageSync("tuser_id")}},methods:{onClickItem:function(t){this.current!==t&&(this.current=t)},yuding:function(n){var o=this;t.showModal({content:"预订此餐，明日会有管家为您送上。确定要预订吗？",confirmColor:"#FF3333",confirmText:"预订",success:function(e){e.confirm?t.request({url:"https://ygjs.mfmeat.top/index.php/api/food/yuding",data:{tuser:o.tuser_id,foodId:n.Id},method:"POST",dataType:"json",success:function(n){t.showLoading({mask:!0,title:"预定中..."}),1==n.data.code?t.showModal({content:"预订成功",showCancel:!1}):2==n.data.code?t.showModal({content:"您已预订该餐品,请勿重复预定",showCancel:!1}):3==n.data.code?t.showModal({content:"该商品已下架",showCancel:!1}):t.showModal({content:"预订失败",showCancel:!1})},complete:function(n){t.hideLoading()}}):e.cancel&&t.showToast({icon:"none",title:"您已取消预订"})}})},loadData:function(){var n=this,o=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"add";t.request({url:"https://ygjs.mfmeat.top/index.php/api/food/menu",dataType:"json",success:function(t){t.data.productList.forEach(function(t){n.productList.push(t)}),t.data.foodList.forEach(function(t){n.foodList.push(t)})}}),"refresh"===o&&(this.productList=[])},foodDetail:function(n){t.navigateTo({url:"detail?id="+n.Id})},qx_yuding:function(n){var o=this;t.showModal({content:"如果餐品已经做出，此刻您取消也是无效的，你确定要取消预定吗?",success:function(e){e.confirm&&t.request({url:"https://ygjs.mfmeat.top/index.php/api/food/qxyuding",data:{tuser:o.tuser_id,foodId:n.Id},method:"POST",dataType:"json",success:function(n){1!=n.data.code?t.showModal({content:n.data.message,showCancel:!1}):t.showToast({title:"取消预订成功",icon:"none"})}})}})}},onLoad:function(){var t=this;this.loadData(),setTimeout(function(){t.renderImage=!0},300)}};n.default=a}).call(this,o("6e42")["default"])},"2b61":function(t,n,o){"use strict";var e=function(){var t=this,n=t.$createElement;t._self._c},a=[];o.d(n,"a",function(){return e}),o.d(n,"b",function(){return a})},"377e":function(t,n,o){"use strict";(function(t){o("9217"),o("921b");e(o("66fd"));var n=e(o("fcaa"));function e(t){return t&&t.__esModule?t:{default:t}}t(n.default)}).call(this,o("6e42")["createPage"])},c0c7:function(t,n,o){"use strict";var e=o("ff04"),a=o.n(e);a.a},c274:function(t,n,o){"use strict";o.r(n);var e=o("2842"),a=o.n(e);for(var c in e)"default"!==c&&function(t){o.d(n,t,function(){return e[t]})}(c);n["default"]=a.a},fcaa:function(t,n,o){"use strict";o.r(n);var e=o("2b61"),a=o("c274");for(var c in a)"default"!==c&&function(t){o.d(n,t,function(){return a[t]})}(c);o("c0c7");var u=o("2877"),i=Object(u["a"])(a["default"],e["a"],e["b"],!1,null,null,null);n["default"]=i.exports},ff04:function(t,n,o){}},[["377e","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/food/food_menu/index"],{2842:function(t,n,o){"use strict";(function(t,e){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var a=function(){return o.e("components/uni-segmented-control/uni-segmented-control").then(o.bind(null,"6739"))},c={components:{uniSegmentedControl:a},data:function(){return{items:["早餐","正餐","明日特供"],styleType:"button",activeColor:"#007aff",current:0,productList:[],foodList:[],breakfast_list:[],renderImage:!1,tuser_id:t.getStorageSync("tuser_id")}},methods:{onClickItem:function(t){this.current!==t&&(this.current=t)},yuding:function(n){var o=this;t.showModal({content:"预订此餐，明日会有管家为您送上。确定要预订吗？",confirmColor:"#FF3333",confirmText:"预订",success:function(e){e.confirm?t.request({url:"https://ygjs.mfmeat.top/index.php/api/food/yuding",data:{tuser:o.tuser_id,foodId:n.Id},method:"POST",dataType:"json",success:function(n){t.showLoading({mask:!0,title:"预定中..."}),1==n.data.code?t.showModal({content:"预订成功",showCancel:!1}):2==n.data.code?t.showModal({content:"您已预订该餐品,请勿重复预定",showCancel:!1}):3==n.data.code?t.showModal({content:"该商品已下架",showCancel:!1}):t.showModal({content:"预订失败",showCancel:!1})},complete:function(n){t.hideLoading()}}):e.cancel&&t.showToast({icon:"none",title:"您已取消预订"})}})},loadData:function(){var n=this,o=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"add";t.request({url:"https://ygjs.mfmeat.top/index.php/api/food/menu",dataType:"json",success:function(t){console.log(e(t.data," at pages\\food\\food_menu\\index.vue:161")),t.data.productList.forEach(function(t){n.productList.push(t)}),t.data.foodList.forEach(function(t){n.foodList.push(t)}),t.data.breakfastList.forEach(function(t){n.breakfast_list.push(t)})}}),"refresh"===o&&(this.productList=[])},foodDetail:function(n){t.navigateTo({url:"detail?id="+n.Id})},qx_yuding:function(n){var o=this;t.showModal({content:"如果餐品已经做出，此刻您取消也是无效的，你确定要取消预定吗?",success:function(e){e.confirm&&t.request({url:"https://ygjs.mfmeat.top/index.php/api/food/qxyuding",data:{tuser:o.tuser_id,foodId:n.Id},method:"POST",dataType:"json",success:function(n){1!=n.data.code?t.showModal({content:n.data.message,showCancel:!1}):t.showToast({title:"取消预订成功",icon:"none"})}})}})}},onLoad:function(){var t=this;this.loadData(),setTimeout(function(){t.renderImage=!0},300)}};n.default=c}).call(this,o("6e42")["default"],o("0de9")["default"])},"377e":function(t,n,o){"use strict";(function(t){o("9217"),o("921b");e(o("66fd"));var n=e(o("fcaa"));function e(t){return t&&t.__esModule?t:{default:t}}t(n.default)}).call(this,o("6e42")["createPage"])},"8a5d":function(t,n,o){"use strict";var e=function(){var t=this,n=t.$createElement;t._self._c},a=[];o.d(n,"a",function(){return e}),o.d(n,"b",function(){return a})},c0c7:function(t,n,o){"use strict";var e=o("ff04"),a=o.n(e);a.a},c274:function(t,n,o){"use strict";o.r(n);var e=o("2842"),a=o.n(e);for(var c in e)"default"!==c&&function(t){o.d(n,t,function(){return e[t]})}(c);n["default"]=a.a},fcaa:function(t,n,o){"use strict";o.r(n);var e=o("8a5d"),a=o("c274");for(var c in a)"default"!==c&&function(t){o.d(n,t,function(){return a[t]})}(c);o("c0c7");var s=o("2877"),u=Object(s["a"])(a["default"],e["a"],e["b"],!1,null,null,null);n["default"]=u.exports},ff04:function(t,n,o){}},[["377e","common/runtime","common/vendor"]]]);
 });
 require('pages/food/food_menu/index.js');
 __wxRoute = 'pages/food/food_menu/detail';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/food/food_menu/detail.js';
@@ -2910,7 +2920,7 @@ require('pages/pwd/pwd.js');
 __wxRoute = 'pages/user/user';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/user/user.js';
 
 define('pages/user/user.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/user/user"],{"21e6":function(n,t,e){},"4e9d":function(n,t,e){"use strict";(function(n){e("9217"),e("921b");o(e("66fd"));var t=o(e("acfa"));function o(n){return n&&n.__esModule?n:{default:n}}n(t.default)}).call(this,e("6e42")["createPage"])},8388:function(n,t,e){"use strict";e.r(t);var o=e("9914"),a=e.n(o);for(var u in o)"default"!==u&&function(n){e.d(t,n,function(){return o[n]})}(u);t["default"]=a.a},9914:function(n,t,e){"use strict";(function(n){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var e={data:function(){return{login:!1,avatarUrl:"/static/logo.png",uerInfo:{}}},onLoad:function(){var t=this,e=n.getStorageSync("tuser_id");e?n.request({url:"https://ygjs.mfmeat.top/index.php/api/user/detail",data:{tuser_id:e},method:"POST",dataType:"json",success:function(e){1==e.data.code?(t.login=!0,t.uerInfo=e.data.message,n.setStorage({key:"UserInfo",data:t.uerInfo,fail:function(){n.showToast({title:"errorST"})}})):n.showLoading({title:"异常错误，请重启APP"})}}):this.goLogin()},methods:{goLogin:function(){this.login||n.reLaunch({url:"/pages/login/login"})},noopen:function(){n.showModal({content:"抱歉，此功能正在研发中，暂未开放"})},goAbout:function(){n.navigateTo({url:"./user_show"})},daka:function(){n.navigateTo({url:"./daka"})},goBody:function(){n.showToast({title:"请前往首页查看",icon:"none"})},loginout:function(){n.showModal({content:"你确定要退出登录吗",success:function(t){1==t.confirm&&(n.clearStorageSync(),n.reLaunch({url:"/pages/login/login"}))}})},userManage:function(){n.navigateTo({url:"/pages/userManage/userManage"})}}};t.default=e}).call(this,e("6e42")["default"])},acfa:function(n,t,e){"use strict";e.r(t);var o=e("f4f3"),a=e("8388");for(var u in a)"default"!==u&&function(n){e.d(t,n,function(){return a[n]})}(u);e("f5d5");var i=e("2877"),r=Object(i["a"])(a["default"],o["a"],o["b"],!1,null,null,null);t["default"]=r.exports},f4f3:function(n,t,e){"use strict";var o=function(){var n=this,t=n.$createElement;n._self._c},a=[];e.d(t,"a",function(){return o}),e.d(t,"b",function(){return a})},f5d5:function(n,t,e){"use strict";var o=e("21e6"),a=e.n(o);a.a}},[["4e9d","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/user/user"],{"21e6":function(e,n,t){},"4e9d":function(e,n,t){"use strict";(function(e){t("9217"),t("921b");a(t("66fd"));var n=a(t("acfa"));function a(e){return e&&e.__esModule?e:{default:e}}e(n.default)}).call(this,t("6e42")["createPage"])},8388:function(e,n,t){"use strict";t.r(n);var a=t("9914"),o=t.n(a);for(var u in a)"default"!==u&&function(e){t.d(n,e,function(){return a[e]})}(u);n["default"]=o.a},9914:function(e,n,t){"use strict";(function(e,t){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var a={data:function(){return{login:!1,avatarUrl:"/static/logo.png",uerInfo:{},imageUrl:null}},onLoad:function(){var n=this,t=e.getStorageSync("tuser_id");t?e.request({url:"https://ygjs.mfmeat.top/index.php/api/user/detail",data:{tuser_id:t},method:"POST",dataType:"json",success:function(t){1==t.data.code?(n.login=!0,n.uerInfo=t.data.message,n.imageUrl=n.uerInfo.image,e.setStorage({key:"UserInfo",data:n.uerInfo,fail:function(){e.showToast({title:"errorST"})}})):e.showLoading({title:"异常错误，请重启APP"})}}):this.goLogin()},methods:{goLogin:function(){this.login||e.reLaunch({url:"/pages/login/login"})},changeImage:function(){var n=this;e.chooseImage({count:1,sizeType:"compressed",success:function(a){var o=a.tempFilePaths[0];e.uploadFile({url:"https://ygjs.mfmeat.top/index.php/api/user/image",filePath:o,name:"image",formData:{user:n.uerInfo.Id},success:function(a){a.data=JSON.parse(a.data),1==a.data.code?n.imageUrl=a.data.info:(console.log(t(a," at pages\\user\\user.vue:132")),e.showModal({content:a.data.info}))},fail:function(){e.showToast({title:"上传失败",icon:"none"})}})},fail:function(){e.showToast({title:"打开相册失败",duration:3e3})}})},noopen:function(){e.showModal({content:"抱歉，此功能正在研发中，暂未开放"})},goAbout:function(){e.navigateTo({url:"./user_show"})},daka:function(){e.navigateTo({url:"./daka"})},goBody:function(){e.showToast({title:"请前往首页查看",icon:"none"})},loginout:function(){e.showModal({content:"你确定要退出登录吗",success:function(n){1==n.confirm&&(e.clearStorageSync(),e.reLaunch({url:"/pages/login/login"}))}})},userManage:function(){e.navigateTo({url:"/pages/userManage/userManage"})}}};n.default=a}).call(this,t("6e42")["default"],t("0de9")["default"])},acfa:function(e,n,t){"use strict";t.r(n);var a=t("d6aa"),o=t("8388");for(var u in o)"default"!==u&&function(e){t.d(n,e,function(){return o[e]})}(u);t("f5d5");var i=t("2877"),r=Object(i["a"])(o["default"],a["a"],a["b"],!1,null,null,null);n["default"]=r.exports},d6aa:function(e,n,t){"use strict";var a=function(){var e=this,n=e.$createElement;e._self._c},o=[];t.d(n,"a",function(){return a}),t.d(n,"b",function(){return o})},f5d5:function(e,n,t){"use strict";var a=t("21e6"),o=t.n(a);o.a}},[["4e9d","common/runtime","common/vendor"]]]);
 });
 require('pages/user/user.js');
 __wxRoute = 'pages/user/user_show';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/user/user_show.js';

@@ -1,6 +1,7 @@
 <script>
 	export default {
 		onLaunch: function() {
+			// #ifdef APP-PLUS  
 			var version = plus.runtime.version;
 			uni.request({
 				url:'https://ygjs.mfmeat.top/index.php/api/main/checkUpdateUser',
@@ -12,40 +13,50 @@
 						var wgeturl = res.data.wgeturl;
 						uni.showModal({
 							title: "版本更新",
-							content: '有新的版本发布，检测到您当前为Wifi连接，是否立即进行新版本下载？',
+							content: '有新的版本发布，是否立即进行新版本下载？',
 							confirmText:'立即更新',
 							// cancelText:'稍后进行',
 							showCancel:false,
-							success: function (res) 
+							success: function (resM) 
 							{
-								if (res.confirm) {
+								if (resM.confirm) {
 									uni.showToast({
 										icon:"none",
 										mask: true,
 										title: '有新的版本发布，程序已启动自动更新。新版本下载完成后将自动弹出安装程序',  
 										duration: 5000,  
 									}); 
-									uni.showLoading({
-										title:'下载中，请稍后...',
-									})
+									// uni.showLoading({
+									// 	title:'下载中，请稍后...',
+									// })
 									//设置 最新版本apk的下载链接
+									// plus.runtime.openURL(wgeturl);  
+									// uni.hideLoading();
 									var downloadApkUrl = wgeturl;
 									var dtask = plus.downloader.createDownload( downloadApkUrl, {}, function ( d, status ) {  
 											// 下载完成  
 											if ( status == 200 ) {
-												uni.hideLoading();
-												plus.runtime.install(plus.io.convertLocalFileSystemURL(d.filename),{},{},function(error){  
+												console.log('success:');
+												console.log(dtask);
+												plus.runtime.install(plus.io.convertLocalFileSystemURL(d.filename),{},function(){
+													uni.showToast({
+														title: '安装成功', 
+														duration: 1500  
+													}); 
+												},function(error){  
 													uni.showToast({  
 														title: '安装失败', 
 														icon:'none',
 														duration: 1500  
 													});  
-												})
-											} else {  
+												});
+											} else {
+												console.log('fail:');
+												console.log(dtask);
 												 uni.showToast({  
 													title: '更新失败',
 													duration: 1500  
-												 });  
+												 });   
 											}    
 										});  
 									dtask.start();
@@ -57,6 +68,7 @@
 					}
 				}
 			})
+			// #endif
 		},
 		onShow: function() {
 			console.log('App Show');

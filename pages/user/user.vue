@@ -1,7 +1,7 @@
 <template>
 	<view class="center">
-		<view class="logo" @click="goLogin" :hover-class="!login ? 'logo-hover' : ''">
-			<image class="logo-img" :src="login ? uerInfo.image :avatarUrl"></image>
+		<view class="logo" :hover-class="!login ? 'logo-hover' : ''">
+			<image class="logo-img" :src="login ? imageUrl :avatarUrl" @click="changeImage"></image>
 			<view class="logo-title" style="display: inline;">
 				<text class="uer-name">{{login ? uerInfo.name : 'Hi.游客'}}</text>
 				<text class="go-login navigat-arrow" v-if="!login">&#xe65e;</text>
@@ -56,7 +56,8 @@
 			return {
 				login: false,
 				avatarUrl: '/static/logo.png',
-				uerInfo: {}
+				uerInfo: {},
+				imageUrl:null,
 			}
 		},
 		
@@ -75,7 +76,8 @@
 						if(res.data.code == 1)
 						{
 							this.login = true;
-							this.uerInfo = res.data.message
+							this.uerInfo = res.data.message;
+							this.imageUrl = this.uerInfo.image;
 							uni.setStorage({
 								key:"UserInfo",
 								data:this.uerInfo,
@@ -103,6 +105,51 @@
 						url: '/pages/login/login'
 					});
 				}
+			},
+			changeImage(){
+				// var str = "{\"code\":1,\"info\":\"https:\\/\\/ygjs.oss-cn-chengdu.aliyuncs.com\\/tuser_image\\/6933fda818d81e28e5602348a51c1053.png\"}";
+				// var a = JSON.parse(str);
+				// console.log(a);
+				// return false;
+				uni.chooseImage({
+					count:1,
+					sizeType:'compressed',
+					success: (res) => {
+						const tempFilePaths = res.tempFilePaths[0];
+						uni.uploadFile({
+							url:'https://ygjs.mfmeat.top/index.php/api/user/image',
+							filePath:tempFilePaths,
+							name:'image',
+							formData:{
+								'user':this.uerInfo.Id
+							},
+							success:(uploadFileRes) => {
+								uploadFileRes.data = JSON.parse(uploadFileRes.data);
+								if(uploadFileRes.data.code == 1 )
+								{
+									this.imageUrl = uploadFileRes.data.info;
+								}else{
+									console.log(uploadFileRes);
+									uni.showModal({
+										content:uploadFileRes.data.info
+									}); 
+								}
+							},
+							fail(){
+								uni.showToast({
+									title:'上传失败',
+									icon:'none'
+								})
+							},
+						});
+					},
+					fail() {
+						uni.showToast({
+							title:'打开相册失败',
+							duration:3000
+						});
+					},
+				})
 			},
 			noopen(){
 				uni.showModal({
